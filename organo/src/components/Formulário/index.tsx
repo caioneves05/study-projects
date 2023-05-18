@@ -3,27 +3,36 @@ import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import Botao from "../Botao";
 import { useState } from "react";
+import { IColaborador } from "../../compartilhado/interfaces/IColaborador";
 
-const Formulario = (props) => {
+interface FormularioProps {
+  aoColaboradorCadastrado: (colaborador: IColaborador) => void
+  times: string[]
+}
+
+const Formulario = ({ aoColaboradorCadastrado, times }: FormularioProps) => {
 
   const [nome, setNome] = useState('')
   const [cargo, setCargo] = useState('')
   const [imagem, setImagem] = useState('')
   const [time, setTime] = useState('')
+  const [date, setDate] = useState()
   
-  const aoSalvar = (e) => {
+  const aoSalvar = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    props.aoColaboradorCadastrado({
+    aoColaboradorCadastrado({
       nome: nome,
       cargo: cargo,
       imagem: imagem,
-      time: time
+      time: time,
+      date: date
     })
     //Limpando os estados do formulário de forma "forçada".
     setNome('')
     setCargo('')
     setImagem('')
     setTime('')
+    
   }
 
   return (
@@ -48,16 +57,24 @@ const Formulario = (props) => {
           label="Imagem" 
           placeholder="Digite a sua imagem" 
           valor={imagem}
-          aoAlterado={imagem => setImagem(imagem)}  
+          aoAlterado={imagem => setImagem(imagem)}
+        />
+        <CampoTexto 
+          label="Data de entrada no time"
+          placeholder=""
+          valor={date}
+          aoAlterado={valor => setDate(valor)}
+          tipo="date"
+          
         />
         <ListaSuspensa 
           required={true} 
-          label='Times' itens={props.times}
+          label='Times' itens={times}
           valor={time}
           aoAlterado={time => setTime(time)}
         />
         <Botao>
-          Criar card
+           Criar card
         </Botao>
       </form>
     </section>
