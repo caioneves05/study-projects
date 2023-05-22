@@ -25,7 +25,7 @@ const Time = (props: TimeProps) => {
                         imagem={colaborador.imagem}
                         key={colaborador.nome}
                         corDeFundo={props.corPrimaria}
-                        date={colaborador.date}
+                        date={colaborador.date} hv
                     />
                 )}
             </div>
