@@ -46,4 +46,16 @@
   font-weight: 700;
   font-size: 32px;
   color: #333333;
+  display: block;
+}
+
+.product-details h3 {
+  text-align: start;
+  font-size: 32px;
+  color: #242424;
+  font-weight: 600;
+}
+
+.product-details p {
+  max-width: 300px;
 }
