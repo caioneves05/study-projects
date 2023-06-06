@@ -1,0 +1,19 @@
+{
+    "name": "caioneves05/buscador-cursos",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Caioneves05\\BuscadorCursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Caio Neves",
+            "email": "ncaio037@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.7",
+        "symfony/dom-crawler": "^6.3"
+    }
+}
