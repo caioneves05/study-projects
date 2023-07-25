@@ -1,0 +1,1 @@
+Este repositório contém o valioso conteúdo dos cursos que fiz na Alura, permitindo-me estudar e aprimorar meus conhecimentos de qualquer lugar ou computador através de um simples `git clone`. Aqui, mantenho registrados meus pequenos projetos voltados para o aprendizado, demonstrando meu progresso e aplicação das habilidades adquiridas.
