@@ -1,0 +1,86 @@
+{
+    "professionals": [
+        {
+            "id": 1,
+            "imagem": "https://imgur.com/imkS67m.png",
+            "name": "Ana Luiza",
+            "specialty": "Clínico Geral",
+            "note": 4.5
+        },
+        {
+            "id": 2,
+            "imagem": "https://imgur.com/iyFgXHb.png",
+            "name": "Caroline Carvalho",
+            "specialty": "Nutricionista",
+            "note": 4.6
+        },
+        {
+            "id": 3,
+            "imagem": "https://imgur.com/ho9CUwp.png",
+            "name": "Camila Fernanda",
+            "specialty": "Oftamologista",
+            "note": 4.3
+        },
+        {
+            "id": 4,
+            "imagem": "https://imgur.com/sVAFzFy.png",
+            "name": "Bruno Divino",
+            "specialty": "Psiquiatra",
+            "note": 4.7
+        }
+    ],
+    "search": [
+        {
+            "id": 1,
+            "date": "2022-01-24",
+            "hour": "08:30",
+            "profesional": [
+                {
+                    "name": "Ana Luiza",
+                    "specialty": "Clínico Geral"
+                }
+            ],
+            "patient": "Larissa Gabriela",
+            "modality": "Particular"
+        },
+        {
+            "id": 2,
+            "date": "2022-01-25",
+            "hour": "08:30",
+            "profesional": [
+                {
+                    "name": "Caroline Carvalho",
+                    "specialty": "Nutricionista"
+                }
+            ],
+            "patient": "Guilherme Lira",
+            "modality": "Particular"
+        }
+    ],
+    "assessments": [
+        {
+            "id": 1,
+            "date": "2022-04-01",
+            "hour": "10:30",
+            "professional": [
+                {
+                    "name": "Ana Luiza",
+                    "specialty": "Clínico Geral"
+                }
+            ],
+            "note": 4.5
+        },
+        {
+            "id": 2,
+            "date": "2022-04-01",
+            "hour": "10:30",
+            "professional": [
+                {
+                    "name": "Caroline Carvalho",
+                    "specialty": "Nutricionista"
+                }
+            ],
+            "note": 4.5
+        }
+    ]
+}
