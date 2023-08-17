@@ -49,8 +49,8 @@ export const Tabela = ({ search }: {search: IQueries[] | null}) => {
                                 <StyleLine>
                                     <StyleCell component="th" scope="row">{new Date(line.date).toLocaleDateString()}</StyleCell>
                                     <StyleCell>{line.hour}</StyleCell>
-                                    <StyleCell>{line.profesional[0].name}</StyleCell>
-                                    <StyleCell>{line.profesional[0].specialty}</StyleCell>
+                                    <StyleCell>{line.professional[0].name}</StyleCell>
+                                    <StyleCell>{line.professional[0].specialty}</StyleCell>
                                     <StyleCell>{line.patient}</StyleCell>
                                     <StyleCell>{line.modality}</StyleCell>
                                 </StyleLine>
