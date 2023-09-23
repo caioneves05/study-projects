@@ -1,0 +1,89 @@
+{
+    "dados_mensais": [
+      {
+        "mês": "Janeiro",
+        "receita_total": 57682.45,
+        "custo_total": 32891.23,
+        "despesas_operacionais": 14872.89,
+        "lucro_liquido": 9873.33
+      },
+      {
+        "mês": "Fevereiro",
+        "receita_total": 62014.67,
+        "custo_total": 35492.14,
+        "despesas_operacionais": 16322.76,
+        "lucro_liquido": 10199.77
+      },
+      {
+        "mês": "Março",
+        "receita_total": 57897.92,
+        "custo_total": 33219.88,
+        "despesas_operacionais": 14781.55,
+        "lucro_liquido": 9861.49
+      },
+      {
+        "mês": "Abril",
+        "receita_total": 60532.15,
+        "custo_total": 34412.09,
+        "despesas_operacionais": 15873.24,
+        "lucro_liquido": 10246.82
+      },
+      {
+        "mês": "Maio",
+        "receita_total": 64109.73,
+        "custo_total": 36488.28,
+        "despesas_operacionais": 16944.67,
+        "lucro_liquido": 10676.78
+      },
+      {
+        "mês": "Junho",
+        "receita_total": 59285.19,
+        "custo_total": 33892.45,
+        "despesas_operacionais": 15211.33,
+        "lucro_liquido": 10181.41
+      },
+      {
+        "mês": "Julho",
+        "receita_total": 61572.87,
+        "custo_total": 35146.62,
+        "despesas_operacionais": 16119.04,
+        "lucro_liquido": 10307.21
+      },
+      {
+        "mês": "Agosto",
+        "receita_total": 58344.56,
+        "custo_total": 33267.28,
+        "despesas_operacionais": 15035.12,
+        "lucro_liquido": 10042.16
+      },
+      {
+        "mês": "Setembro",
+        "receita_total": 62856.37,
+        "custo_total": 35802.14,
+        "despesas_operacionais": 15674.72,
+        "lucro_liquido": 10979.51
+      },
+      {
+        "mês": "Outubro",
+        "receita_total": 59123.68,
+        "custo_total": 33751.39,
+        "despesas_operacionais": 14836.87,
+        "lucro_liquido": 10535.42
+      },
+      {
+        "mês": "Novembro",
+        "receita_total": 63341.79,
+        "custo_total": 36213.26,
+        "despesas_operacionais": 15984.53,
+        "lucro_liquido": 11044.00
+      },
+      {
+        "mês": "Dezembro",
+        "receita_total": 66027.94,
+        "custo_total": 37722.11,
+        "despesas_operacionais": 16732.66,
+        "lucro_liquido": 11573.17
+      }
+    ]
+  }
+  
