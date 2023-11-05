@@ -88,7 +88,7 @@ import {
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Cadastro de Clientes</ModalHeader>
+            <ModalHeader>Cadastro de Registros</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <FormControl display="flex" flexDir="column" gap={4}>
