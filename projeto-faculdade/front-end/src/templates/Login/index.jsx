@@ -10,13 +10,37 @@ import {
     FormErrorMessage,
   } from '@chakra-ui/react';
 import { useState } from 'react';
-import { login } from '../../services/api';
+import axios from "axios";
+import { useNavigate } from 'react-router-dom';
   
   export const Login = () => {
     const [emailValue, setEmailValue] = useState('')
     const [passwordValue, setPasswordValue] = useState('')
-
+    
     const [errorValidation, setErrorValidation] = useState(false)
+    const navigate = useNavigate()
+    const urlBase = 'http://localhost:6060'
+
+    const handleLogin = async () => {
+      try {
+        const body = {
+          email: emailValue,
+          password: passwordValue,
+        };
+    
+        const config = {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        };
+    
+        await axios.post(`${urlBase}/login`, body, config);
+    
+        navigate('/main')
+      } catch (error) {
+        setErrorValidation(true)
+      }
+    };
 
     return (
       <>
@@ -44,15 +68,8 @@ import { login } from '../../services/api';
                 )}
               </FormControl>
   
-              <Button onClick={async () => {
-                login({
-                  email: emailValue,
-                  password: passwordValue
-                }).then((response) => response).catch(() => {
-                  setErrorValidation(!errorValidation)
-                })
-              }} type="button" colorScheme="teal" w="100%">
-                Login
+              <Button onClick={handleLogin} type="button" colorScheme="teal" w="100%">
+                    Login
               </Button>
             </Stack>
           </form>

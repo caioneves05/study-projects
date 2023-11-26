@@ -1,5 +1,5 @@
 import express from 'express'
-import user from './company.routes.js'
+import router from './routes.js'
 
 const routes = (app) => {
     app.route('/').get((req, res) => {
@@ -8,7 +8,7 @@ const routes = (app) => {
   
     app.use(
       express.json(),
-      user
+      router
     )
   }
 

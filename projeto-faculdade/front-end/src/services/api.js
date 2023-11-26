@@ -3,27 +3,6 @@ import axios from "axios";
 
 const urlBase = 'http://localhost:6060'
 
-export async function login(register) {
-  try {
-    const body = {
-      email: register.email,
-      password: register.password,
-    };
-
-    const config = {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    };
-
-    const response = await axios.post(`${urlBase}/create`, body, config);
-
-    return response.data;
-
-  } catch (error) {
-    return error;
-  }
-}
 
 export async function getRegister() {
     try {
